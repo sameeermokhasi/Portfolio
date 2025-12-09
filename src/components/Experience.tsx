@@ -46,7 +46,7 @@ const Experience = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mt-4" />
         </motion.div>
 
-        <div className="max-w-7xl mx-auto">
+        <div className="w-full max-w-4xl mx-auto">
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.title}
@@ -64,36 +64,36 @@ const Experience = () => {
                   <div className="w-3 h-3 rounded-full bg-background" />
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-6">
+                <div className="grid lg:grid-cols-2 gap-4">
                   {/* Left Block: Experience Details */}
-                  <div className="glass rounded-2xl p-8 glass-hover h-full flex flex-col justify-between">
-                    <div>
+                  <div className="glass rounded-xl p-3 glass-hover h-full flex flex-col justify-start relative">
+                    <div className="flex flex-col gap-3.5">
                       <h3 className="text-2xl font-bold text-foreground">{exp.title}</h3>
-                      <p className="text-primary font-semibold text-lg mb-1">{exp.company}</p>
-                      <p className="text-sm text-muted-foreground mb-4">{exp.location}</p>
+                      <p className="text-primary font-semibold text-lg">{exp.company}</p>
+                      <p className="text-sm text-muted-foreground">{exp.location}</p>
 
-                      <p className="text-muted-foreground mb-6 leading-relaxed">
+                      <p className="text-muted-foreground leading-snug">
                         {exp.description}
                       </p>
-                    </div>
 
-                    <div className="flex flex-wrap gap-2 mt-auto">
-                      <span className="text-sm font-semibold text-foreground mr-2">Skills:</span>
-                      {exp.skills?.map((skill) => (
-                        <span key={skill} className="text-xs px-2 py-1 rounded-md bg-secondary/10 text-secondary-foreground border border-secondary/20">
-                          {skill}
-                        </span>
-                      ))}
+                      <div className="flex flex-wrap gap-2">
+                        <span className="text-sm font-semibold text-foreground mr-1 self-center">Skills:</span>
+                        {exp.skills?.map((skill) => (
+                          <span key={skill} className="text-xs px-2 py-1 rounded-md bg-secondary/10 text-secondary-foreground border border-secondary/20">
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                    <span className="absolute top-8 right-8 px-4 py-2 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 text-sm font-mono text-primary border border-primary/30 hidden sm:block">
+                    <span className="absolute top-4 right-4 px-4 py-1 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 text-xs font-mono text-primary border border-primary/30 hidden sm:block">
                       {exp.duration}
                     </span>
                   </div>
 
                   {/* Right Block: Certification Card */}
                   {exp.certificate && (
-                    <div className="glass rounded-2xl p-2 glass-hover h-full flex flex-col">
-                      <a href={exp.certificate.url} target="_blank" rel="noopener noreferrer" className="block group/cert relative overflow-hidden rounded-xl h-full">
+                    <div className="glass rounded-xl p-1 glass-hover h-full flex flex-col">
+                      <a href={exp.certificate.url} target="_blank" rel="noopener noreferrer" className="block group/cert relative overflow-hidden rounded-lg h-full">
                         <div className="w-full h-full relative bg-muted">
                           <img
                             src={exp.certificate.thumbnail}
@@ -108,7 +108,7 @@ const Experience = () => {
                           </div>
 
                           {/* Card overlay text */}
-                          <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                          <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
                             <p className="text-white font-bold text-lg mb-1">{exp.certificate.title}</p>
                             <p className="text-white/80 text-sm">Click to view credential</p>
                           </div>

@@ -46,17 +46,12 @@ const Footer = () => {
 
           {/* Copyright */}
           <motion.div
-            className="flex items-center gap-2 text-sm text-muted-foreground"
+            className="flex items-center gap-2 text-sm text-center text-muted-foreground"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            <span>© {new Date().getFullYear()}</span>
-            <span>•</span>
-            <span className="flex items-center gap-1">
-              Made with <Heart className="w-4 h-4 text-destructive animate-pulse" /> and{" "}
-              <Code className="w-4 h-4 text-primary" />
-            </span>
+            <span>@2025 : Sameer Venkatesh Mokhasi</span>
           </motion.div>
         </div>
       </div>
