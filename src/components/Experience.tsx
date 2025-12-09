@@ -46,7 +46,7 @@ const Experience = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mt-4" />
         </motion.div>
 
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.title}
