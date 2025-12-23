@@ -10,7 +10,7 @@ const educationData = [
     period: "Currently Pursuing",
     status: "ongoing",
     icon: GraduationCap,
-    description: "Focusing on Problem solving, AI, Machine Learning, and Full Stack Development",
+    description: "Institue: BMS College of Engineering (BMSCE)",
     grade: "CGPA: 7.00",
   },
   {
@@ -20,8 +20,8 @@ const educationData = [
     period: "Completed",
     status: "completed",
     icon: BookOpen,
-    description: "Strong foundation in programming and computer fundamentals",
-    grade: "GRADE : 10CGPA",
+    description: "Institue: K.L.E C.I.Munavalli Polytechnic",
+    grade: "RANK:470 , GRADE : 10CGPA",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const educationData = [
     period: "Completed",
     status: "completed",
     icon: Award,
-    description: "Completed secondary education with focus on Science and Mathematics",
+    description: "School: Chinmaya Vidyalaya",
     grade: "GRADE: 78%",
   },
 ];

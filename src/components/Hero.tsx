@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
             <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse" />
             <img
-              src="/profile-pic.png"
+              src="/avatar-new.png"
               alt="Profile"
               className="relative w-full h-full object-cover rounded-full border-4 border-primary/20 shadow-2xl glass"
             />
